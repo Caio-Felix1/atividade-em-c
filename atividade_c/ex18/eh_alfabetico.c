@@ -5,10 +5,6 @@ int eh_alfabetico(const char *str) {
     int tamanho = strlen(str);
     int qtd_letras = 0;
 
-    if (str[0] == '\0') {
-        return 0;
-    }
-
     for (int i = 0; i < tamanho; i++) {
         if ((str[i] >= 'A' && str[i] <= 'Z') || (str[i] >= 'a' && str[i] <= 'z')) {
             qtd_letras++;
@@ -44,7 +40,7 @@ int main() {
         0,
         1,
         0,
-        0,
+        1,
         1,
         0,
         0

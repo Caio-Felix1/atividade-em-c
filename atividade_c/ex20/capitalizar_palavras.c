@@ -4,6 +4,12 @@
 void capitalizar_palavras(char *str) {
     int tamanho = strlen(str);
 
+    for (int i = 0; i < tamanho;i++) {
+        if (str[i] >= 'A' && str[i] <= 'Z') {
+            str[i] = str[i] + 32;
+        }
+    }
+
     for (int i = 0; i < tamanho; i++) {
         if (i == 0 && str[i] != ' ' && str[i] >= 'a' && str[i] <= 'z') {
             str[i] = str[i] - 32;

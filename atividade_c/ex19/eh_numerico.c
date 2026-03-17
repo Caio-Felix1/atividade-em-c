@@ -5,10 +5,6 @@ int eh_numerico(const char *str) {
     int tamanho = strlen(str);
     int qtd_digitos = 0;
 
-    if (str[0] == '\0') {
-        return 0;
-    }
-
     for (int i = 0; i < tamanho; i++) {
         if (str[i] >= '0' && str[i] <= '9') {
             qtd_digitos++;
@@ -42,7 +38,7 @@ int main() {
         1,
         0,
         0,
-        0,
+        1,
         1,
         0,
         1,
